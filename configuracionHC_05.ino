@@ -16,8 +16,8 @@ char modo='0';// 0 escl. 1 maest
 void setup() {
   pinMode(LED,OUTPUT);
   pinMode(BTPWR,OUTPUT);
-  Serial.begin(38400); // Velocidad configuración
-
+  Serial.begin(38400); // Velocidad configuración  
+  digitalWrite(BTPWR,LOW);
   digitalWrite(LED,HIGH);  //pulsamos pulsador HC-05
   delay(4000);
   digitalWrite(LED,LOW);
